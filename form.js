@@ -1,4 +1,7 @@
-const numberRows = 4;
+//const numberRows = 10;
+// Get the URL search parameters
+const urlSearchParams = new URLSearchParams(window.location.search);
+const numberRows = urlSearchParams.get('num');
 
 const newInput = (nameId, placeholderId, container, type) => {
     const inputItem = document.createElement("input");
@@ -31,15 +34,15 @@ function createTableInputs(numRows) {
         const row = table.insertRow();
 
         const cellN = row.insertCell();
-        newInput("nombreCoIp" + i, "... nombre", cellN, "text");
+        newInput("nombreCoIp" + i, "... nombre " + i, cellN, "text");
 
         const cellE = row.insertCell();
         //cellE.setAttribute("id", `e${i}`);
-        newInput("mailIp" + i, "... email", cellE, "email");
+        newInput("mailIp" + i, "... email " + i, cellE, "email");
 
         const cellT = row.insertCell();
         // cellT.setAttribute("id", `t${i}`);
-        newInput("phoneIp" + i, "... phone", cellT, "text");
+        newInput("phoneIp" + i, "... phone " + i, cellT, "text");
     }
     document.body.appendChild(table);
 
