@@ -2,6 +2,7 @@
 
 example of a Table and its content created dynamically with Javascript
 
-- data stored and retrieved using local storage
+- the information of each input is stored and retrieved using local storage
+  -using url parameter to determine the number of rows
 
-preview available at: https://iris611.com/table-localstorage/
+preview available at: https://iris611.com/table-localstorage/?num=15
