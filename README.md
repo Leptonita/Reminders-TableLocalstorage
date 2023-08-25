@@ -1,4 +1,4 @@
-# Reminders - table & Localstorage
+# Reminders - Table & Localstorage
 
 example of a Table and its content created dynamically with Javascript
 
