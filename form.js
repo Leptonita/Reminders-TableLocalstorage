@@ -44,7 +44,7 @@ function createTableInputs(numRows) {
         // cellT.setAttribute("id", `t${i}`);
         newInput("phoneIp" + i, "... phone " + i, cellT, "text");
     }
-    document.body.appendChild(table);
+    document.getElementById("container").appendChild(table);
 
 }
 
