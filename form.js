@@ -1,7 +1,7 @@
-//const numberRows = 10;
 // Get the URL search parameters
 const urlSearchParams = new URLSearchParams(window.location.search);
-const numberRows = urlSearchParams.get('num');
+const num = Number(urlSearchParams.get('num'));
+const numberRows = ((num == undefined) || (num < 1) || (isNaN(num))) ? 3 : num;
 
 const newInput = (nameId, placeholderId, container, type) => {
     const inputItem = document.createElement("input");
