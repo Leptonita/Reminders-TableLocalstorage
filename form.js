@@ -34,7 +34,7 @@ function createTableInputs(numRows) {
         const row = table.insertRow();
 
         const cellN = row.insertCell();
-        newInput("nombreCoIp" + i, "... nombre " + i, cellN, "text");
+        newInput("nombreCoIp" + i, "... name " + i, cellN, "text");
 
         const cellE = row.insertCell();
         //cellE.setAttribute("id", `e${i}`);
@@ -42,7 +42,7 @@ function createTableInputs(numRows) {
 
         const cellT = row.insertCell();
         // cellT.setAttribute("id", `t${i}`);
-        newInput("phoneIp" + i, "... phone " + i, cellT, "text");
+        newInput("phoneIp" + i, "(+ ... )  phone " + i, cellT, "text");
     }
     document.getElementById("container").appendChild(table);
 
